@@ -5,12 +5,16 @@
   "dependencies": {
     "axios": "^0.17.0",
     "bulma": "^0.6.0",
+    "gh-pages": "^1.0.0",
     "moment": "^2.19.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.17"
   },
+  "homepage": "http://joshuawootonn.com/contacts/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
